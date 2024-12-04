@@ -1,0 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #ff0000;
+}
+
+.finder{
+    background-color: white;
+    border-radius: 2rem;
+    height: 2rem;
+    width: 10rem;
+}
