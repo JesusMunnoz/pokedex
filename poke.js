@@ -14,7 +14,7 @@ function fetchPokemonData(pokemonName) {
 }
 
 function displayPokemonData(pokemon) {
-    document.getElementById('pokeName').innerText = pokemon.name;
+    document.getElementById('pokeName').innerText = pokemon.name.toUpperCase();
     document.getElementById('pokeImage').src = pokemon.sprites.front_default;
 
     let abilitiesTable = document.getElementById('abilitiesTable').getElementsByTagName('tbody')[0];
@@ -23,28 +23,16 @@ function displayPokemonData(pokemon) {
     let typeTable = document.getElementById('typeTable').getElementsByTagName('tbody')[0];
     typeTable.innerHTML = '';
 
-    /*for (let i = 0; i < pokemon.types.length; i++){
-        let row = typeTable.insertRow();
-        let cell = row.insertCell(0);
-        cell.innerText = pokemon.types[i].type.name;
-    }
-
-    for (let i = 0; i < pokemon.abilities.length; i++){
-        let row = abilitiesTable.insertRow();
-        let cell = row.insertCell(0);
-        cell.innerText = pokemon.abilities[i].ability.name;
-    }*/
-
     pokemon.types.forEach(type => {
         let row = typeTable.insertRow();
         let cell = row.insertCell(0);
-        cell.innerText = type.type.name;
+        cell.innerText = type.type.name.toUpperCase();
     });
 
     pokemon.abilities.forEach(ability => {
         let row = abilitiesTable.insertRow();
         let cell = row.insertCell(0);
-        cell.innerText = ability.ability.name;
+        cell.innerText = ability.ability.name.toUpperCase();
     });
 
     document.getElementById('pokemonInfo').classList.remove('hidden');

@@ -4,14 +4,114 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./assets/images.png">
     <title>Pokedex</title>
 </head>
 <body>
 
-    <input type="text" class="finder">
-    <button>Search</button>
+    <header>
+        <h1>POKEDEX</h1>
+    </header>
+
+    <div class="main">
+
+        <aside class="left">
+            <img src="./assets/Pokemon.jpg" alt="" class="pImg">
+        </aside>
+
+        <main> 
+            <section class="section1">
+                <div class="circles">
+                    <div class="c1">
+                        <div class="c3"></div>
+                    </div>
+                    <div class="c2">
+                        <div class="c3"></div>
+                    </div>
+                    <div class="c2">
+                        <div class="c3"></div>
+                    </div>
+                </div>
+
+                <div class="squares">
+                    <div class="screen">
+                        <img id="pokeImage" src="" alt="" class="pokeImg">
+                    </div>
+
+                    <form id="pokemonForm" class="pokemonForm">
+                        <input type="text" id="pokemonName" placeholder="Enter Pokémon name" class="inputPoke">
+                        <button type="submit" class="btnSearch">Search</button>
+                    </form>
+                </div>
+            </section>
+
+            <section class="section2 hidden" id="pokemonInfo">
+                <div class="boxTop">
+
+                    <h3 id="pokeName"></h3>
+
+                    <table class="blueBtns">
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </table>
+
+                    <div class="greyBtns">
+                        <div class="greyBtn"></div>
+                        <div class="greyBtn"></div>
+                    </div>
+
+                </div>
+                
+                <div class="boxBotton">
+
+                    <table id="typeTable">
+                        <thead>
+                            <tr>
+                                <th class="info">TYPOLOGY:</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+
+                    <hr>
+                    
+                    
+                    <table id="abilitiesTable">
+                        <thead>
+                            <tr>
+                                <th class="info">ABILITIES:</th>
+                            </tr>
+                        </thead>
+        
+                        <tbody></tbody>
+                    </table>
+
+                </div>
+            </section>
+        </main>
+
+        <aside class="right"> 
+            <img src="./assets/Pokemon.jpg" alt="" class="pImg">
+        </aside>
+
+    </div>
+
+    <footer>Copyright &#169; 2024 Jesús Muñoz. All Rights Reserved.</footer>
 
 
-    
+    <script src="poke.js"></script>
 </body>
 </html>
