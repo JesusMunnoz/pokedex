@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PokémonApi</title>
+    <link rel="stylesheet" href="poke.css">
+    <link rel="icon" href="images.png" >
+</head>
+
+<body>
+    
+    <div class="contenedor">
+
+        <h1>Pokémon Finder</h1>
+        <form id="pokemonForm">
+            <input type="text" id="pokemonName" placeholder="Introduzca Nombre del Pokémon">
+            <button type="submit">Search</button>
+        </form>
+
+        <div id="pokemonInfo" class="hidden">
+
+            <h2 id="pokeName"></h2>
+
+            <img id="pokeImage" src="" alt="Imagen del Pokémon">
+
+            <h3>POKEDEX</h3>
+            
+            <table id="typeTable">
+                <thead>
+                    <tr>
+                        <th>Typology:</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+            
+            
+            <table id="abilitiesTable">
+                <thead>
+                    <tr>
+                        <th>Abilities:</th>
+                    </tr>
+                </thead>
+
+                <tbody></tbody>
+            </table>
+
+        </div>
+
+    </div>
+
+    <script src="poke.js"></script>
+
+</body>
+</html>
